@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search in box</title>
+    </head>
+    <body>
+        <script>
+            input=document.querySelectorAll("._2S1VP")[0].innerText="Zaid CS";
+            filter=input.toUpperCase();
+            list=document.getElementsByClassName("_2EXPL");
+            for (i = 0; i < list.length; i++) {
+                a = list[i].getElementsByClassName("_1wjpf _3NFp9 _3FXB1")[0];
+                if(a){let t=a.textContent || a.innerHTML;
+                    if (t.toUpperCase().indexOf(filter) > -1) {
+                      list[i].style.display = "";
+                    } else {
+                      list[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
